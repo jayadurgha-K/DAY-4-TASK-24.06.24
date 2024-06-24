@@ -1,0 +1,17 @@
+
+// Return all the palindromes in an array
+//Task-2e
+//! Using Arrow function
+
+var palindromes = (arr5) => {
+    var result5 = [];
+    for (let i = 0; i < arr5.length; i++) {
+      var data = arr5[i].split("").reverse().join("");
+      if (data === arr5[i]) {
+        result5.push(arr5[i]);
+      }
+    }
+    return result5;
+  };
+  
+  console.log(palindromes(["dad", "mom", "papa", "appa"]));

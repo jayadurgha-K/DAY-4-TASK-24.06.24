@@ -1,0 +1,13 @@
+// Task-2C
+//Sum of all numbers in an array
+// Using Arrow function
+
+var sum = 0;
+var add = (arr) => {
+  for (var i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+
+  return sum;
+};
+console.log(add([34, 56, 23, 87, 23, 45, 67, 12, 42, 54]));

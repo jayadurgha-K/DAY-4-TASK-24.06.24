@@ -1,0 +1,14 @@
+//Task-1e
+// Return all the palindromes in an array
+//! Using IIFE function
+
+(function (arr5) {
+  var result5 = [];
+  for (let i = 0; i < arr5.length; i++) {
+    var data = arr5[i].split("").reverse().join("");
+    if (data === arr5[i]) {
+      result5.push(arr5[i]);
+    }
+  }
+  console.log(result5);
+})(["dad", "mom", "papa", "appa"]);

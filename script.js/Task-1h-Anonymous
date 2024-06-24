@@ -1,0 +1,16 @@
+// Task-1h
+// Rotate an array by k times
+//! Using anonymous function
+
+var array = [1, 3, 5, 7, 9];
+var K = 3;
+var Rotate = function (array, K) {
+  for (var i = 0; i < K; i++) {
+    array.push(array[i]);
+  }
+  for (var i = 0; i < K; i++) {
+    array.shift();
+  }
+  return array;
+};
+console.log(Rotate(array, K));

@@ -1,0 +1,13 @@
+//Day-4-Task
+// Task-1b
+//Convert all the strings to title caps in a string array
+//! using IIFE function
+
+(function (arr) {
+  var res = arr.toString();
+  var data = res.toLowerCase().split(" ");
+  for (var i = 0; i < data.length; i++) {
+    data[i] = data[i].charAt(0).toUpperCase() + data[i].slice(1);
+  }
+  console.log(data.join(" "));
+})(["i lOVe mY kIDs"]);

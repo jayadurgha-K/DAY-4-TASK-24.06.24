@@ -1,0 +1,15 @@
+
+//Day-4-Task
+// Task-1b
+//Convert all the strings to title caps in a string array
+
+//! Using anonymous function
+var titlecase = function (arr) {
+  var res = arr.toString();
+  var data = res.toLowerCase().split(" ");
+  for (var i = 0; i < data.length; i++) {
+    data[i] = data[i].charAt(0).toUpperCase() + data[i].slice(1);
+  }
+  return data.join(" ");
+};
+console.log(titlecase(["i lOVe mY kIDs"]));
